@@ -279,7 +279,7 @@ bool checkValidOperatorsInput(string &inputExpression) {
     for(int i = 0; i < inputExpression.length(); i++){
         char ch = inputExpression[i];
         char ch2 = inputExpression[i+1];
-        if((isOperator(ch) && (ch != '(') && (ch != ')'))&&(isOperator(ch2) && (ch2 != '(') && (ch2 != ')'))){
+        if((isOperator(ch) && (ch != '(') && (ch != ')')) && (isOperator(ch2) && (ch2 != '(') && (ch2 != ')'))){
             res = false;
             cout << "Wrong writing operator's. Your formula is invalid! ";
             break;
@@ -287,7 +287,7 @@ bool checkValidOperatorsInput(string &inputExpression) {
             res = true;
         }
     }
-    if(isOperator(inputExpression[(inputExpression.length())-1])){
+    if(isOperator(inputExpression[(inputExpression.length()) - 1])){
         res = false;
     }
     return res;
